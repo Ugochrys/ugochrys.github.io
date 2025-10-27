@@ -1,0 +1,106 @@
+/* ===== Card Styles ===== */
+.main-container {
+  display: flex;
+  flex-wrap: wrap;   /* allows cards to break onto a new line if needed */
+  gap: 20px;         /* space between cards */
+  justify-content: center; /* centers them horizontally */
+  margin-top: 20px;
+}
+
+.card {
+  background: white;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-between; 
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  padding: 10px; 
+  text-align: center;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  height: auto;
+  overflow: hidden;
+  min-height: 350px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* ===== Name Button ===== */
+.name-button {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 5px;
+  padding: 8px 12px;
+  background-color: #005792;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none; /* removes underline from link */
+  gap: 4px;
+}
+
+.name-button:hover {
+  background-color: #003f6b;
+}
+
+.icon {
+  font-size: 1.2em;
+}
+
+/* ===== Mission/Vision Section ===== */
+.text-containers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  justify-content: center;
+  background: #fff;
+  margin-top: 2rem;
+}
+
+.text-containers > div {
+  flex: 1 1 250px;
+  padding: 2rem;
+  background: linear-gradient(135deg, #fff, #e8f5e9);
+  border: 2px solid #c8e6c9;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform;
+}
+
+.text-containers > div:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.div1:hover {
+  background: linear-gradient(135deg, #2e7d32, #1b5e20);
+  color: #fff;
+}
+
+.div2:hover {
+  background: linear-gradient(135deg, #1565c0, #0d47a1);
+  color: #fff;
+}
+
+.div3:hover {
+  background: linear-gradient(135deg, #ef6c00, #e65100);
+  color: #fff;
+}

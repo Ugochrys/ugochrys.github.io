@@ -1,0 +1,75 @@
+
+.main-content {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  height: 300px;
+}
+
+.bio-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.bio-image {
+  width: 450px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.bio-text {
+  flex: 1;
+  min-width: 250px;
+  text-align: justify; /* Justifies the text */
+}
+
+.section {
+  margin: 40px 0; /* Top and bottom margin */
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.text-containers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  justify-content: center;
+  background: #fff;
+}
+
+.text-containers > div {
+  flex: 1 1 250px;
+  padding: 2rem;
+  background: linear-gradient(135deg, #fff, #e8f5e9);
+  border: 2px solid #c8e6c9;
+  border-radius: 12px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.text-containers > div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.div1:hover {
+  background: linear-gradient(135deg, #2e7d32, #1b5e20); /* dark green gradient */
+  color: #fff;
+}
+
+.div2:hover {
+  background: linear-gradient(135deg, #1565c0, #0d47a1); /* dark blue gradient */
+  color: #fff;
+}
+
+.div3:hover {
+  background: linear-gradient(135deg, #ef6c00, #e65100); /* dark orange gradient */
+  color: #fff;
+}
