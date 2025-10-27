@@ -1,0 +1,1324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIOCÈSE DE NKONGSAMBA - Fixed Layout</title>
+    
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="pretres.css">
+</head>
+<body>
+    <!--  Banner -->
+    <header class="banner">
+        <div class="logo-eve-container">
+            <div class="logo-container">
+                <img src="New logo.jpeg" alt="Diocesan logo" class="logo">
+            </div>
+            
+            <div class="Eve-container">
+                <img src="Eve2.jpg" alt="Diocese Eve" class="Eve2">
+            </div>
+        </div>
+        
+        <div class="banner-text">
+            <h1>DIOCÈSE DE NKONGSAMBA</h1>
+        </div>
+        
+        <div class="search-container">
+            <form action="/Search" method="GET">
+                <input type="text" placeholder="Search Website..." name="query" class="search-input">
+                <button type="submit" class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </div>
+    </header>
+
+    <!-- Dropdowns -->
+   <nav class="navbar">
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="accueil.html">Accueil</a></li>
+            <li class="nav-item dropdown">
+                <a href="#ordinaire">Ordinaire</a>
+                <div class="dropdown-content">
+                    <a href="Eveque.html">Notre Evêque</a>
+                    <a href="form.html">Messages Evêque/Blogs</a>
+                    <a href="#Amoirie">Amoirie</a>
+                    <a href="station.html">Rendez-vous</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#paroisses">Paroisses</a>
+                <div class="dropdown-content">
+                    <a href="parishes.html">Nos Paroisses</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#profile">Profile</a>
+                <div class="dropdown-content">
+                    <a href="#histoire">Histoire de Diocèse</a>
+                    <a href="curie.html">Curie Diocesaine</a>
+                    <a href="conseille.html">Doyens de Zones </a>
+                    <a href="conseille.html">Vicairs Episcopaux </a>
+                    <a href="conseille.html">Conseil Presbytéral</a>
+                    <a href="conseille.html">Conseil Episcopal</a>
+                    <a href="conseille.html">Conseil: affaires Economique</a>
+                    <a href="conseille.html">Conseil: affaires juridiques</a>
+                    <a href="conseille.html">Conseil Pastoral</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#nstitutions">Institutions</a>
+                <div class="dropdown-content">
+                    <a href="congre.html">Les Congrégations Religieuses</a>
+                    <a href="Congregations.html">Dieu au Présent</a>
+                    <a href="#pastorale">Institutions Pastorales/Vocationales</a>
+                    <a href="aumon.html">Aûmoneries</a>
+                    <a href="#Education">Ecôles/Education</a>
+                    <a href="#santé">Service de la santé</a>
+                    <a href="chap.html">Apostolat de Laics</a>
+                    <a href="sedico.html">Communication</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#personnel">Personnel</a>
+                <div class="dropdown-content">
+                    <a href="pretres.html">Prêtres Diocésains</a>
+                    <a href="#mission-special">En Mission-Special</a>
+                    <a href="#prêtres-etudes">Pêtres aux etudes</a>
+                    <a href="#prêtres-religieux">Prêtres Religieux</a>
+                    <a href="#deceased">Deceased Indigenous Priests</a>
+                    <a href="seminariste.html">Seminaristes</a>
+                    <a href="#catechistes">Catechistes</a>
+                    <a href="#others">Others</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#Enseigments">Doctrines & Morales</a>
+                <div class="dropdown-content">
+                    <a href="#apostolat-familiale">Pastorale des familles</a>
+                    <a href="#civic">Droits et Responsabilités civiques</a>
+                    <a href="#liturgical">Bureau Liturgique</a>
+                    <a href="#spirituality">La Spiritualité</a>
+                    <a href="#scripture">Enseignement Biblique</a>
+                    <a href="#general">General Issues</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#information">Information</a>
+                <div class="dropdown-content">
+                    <a href="contact.html">Notre Contact</a>
+                    <a href="#calendar">Calendrier Liturgique</a>
+                    <a href="#dons">Collectes & Dons</a>
+                    <a href="hopital.html">Projects En cours</a>
+                    <a href="#newsletter">Hebdomadair Diocesain</a>
+                    <a href="maison.html">Maison d'Accueil</a>
+                    <a href="#nouvelles">Nouvelles & Evenements</a>
+                    <a href="#events">Evenements à venir</a>
+                    <a href="#gallarie">Gallarie Photos</a>
+                </div>         
+            </li>
+        </ul>
+    </nav>         <!-- Image Slider -->
+<section class="slider">
+    <div class="slides">
+      <img src="pretres1.jpg" class="slide active" alt="Slide 1" />
+      <img src="priests2.jpg" class="slide" alt="Slide 2" />
+      <img src="pretres3.jpg" class="slide" alt="Slide 3" />
+      <img src="pretres4.jpg" class="slide" alt="Slide 4" />
+    </div>
+  
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+  </section>
+  
+<script>
+(function () {
+    const slides = document.querySelector('.slides');
+    const slideImages = document.querySelectorAll('.slide');
+    const prevBtn = document.querySelector('.prev');
+    const nextBtn = document.querySelector('.next');
+
+    // Check if required elements exist
+    if (!slides || slideImages.length === 0 || !prevBtn || !nextBtn) return;
+
+    let index = 0;
+    let autoSlide;
+    const totalSlides = slideImages.length;
+
+    function showSlide(i) {
+        index = (i + totalSlides) % totalSlides;
+        slides.style.transform = `translateX(-${index * 100}%)`;
+
+        slideImages.forEach(img => img.classList.remove('active'));
+        slideImages[index].classList.add('active');
+    }
+
+    function startAutoSlide() {
+        autoSlide = setInterval(() => {
+            showSlide(index + 1);
+        }, 4000);
+    }
+
+    // Initial setup: handle image load
+    slideImages.forEach(img => {
+        img.addEventListener('load', () => {
+            img.dataset.loaded = true;
+        });
+        if (img.complete) img.dataset.loaded = true;
+    });
+
+    slides.addEventListener('mouseenter', () => clearInterval(autoSlide));
+    slides.addEventListener('mouseleave', startAutoSlide);
+
+    prevBtn.addEventListener('click', () => {
+        clearInterval(autoSlide);
+        showSlide(index - 1);
+        setTimeout(startAutoSlide, 6000);
+    });
+
+    nextBtn.addEventListener('click', () => {
+        clearInterval(autoSlide);
+        showSlide(index + 1);
+        setTimeout(startAutoSlide, 6000);
+    });
+
+    // Start initial auto-slide
+    startAutoSlide();
+})();
+</script>
+    <main>
+     <div class="container-pretres">
+     <h2 class="text-center">PRÊTRES DIOCÉSAINS</h2>
+            
+            <div class="row">
+                    <div class= "col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="vicaire general.JPG" class="img-fluid" alt="vg" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Mgr Joseph TCHINDA</h5>
+                            <p class="card-text">Cathédrale de Nkongsamba</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="chanc2.jpg" class="img-fluid" alt="Pastor" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Roland CHE</h5>
+                            <p class="card-text">St. Jude Nkongsamba</p>
+                        </div>
+                    </div>
+                </div>
+                  <!-- Card 2 -->
+                <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="Econome.JPG" class="img-fluid" alt="Pretre" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé José NINTIDEM</h5>
+                            <p class="card-text">Nzondji Nkongsamba </p>
+                           
+                        </div>
+                    </div>
+                </div>
+                  <!-- Card 2 -->
+                <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="ugo.jpg" class="img-fluid" alt="Pretre" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Basil Ugochukwu NLEBEDIM</h5>
+                            <p class="card-text">Nkongsamba</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                  <!-- Card 2 -->
+                <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="pafi.jpg" class="img-fluid" alt="Pastor" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Abbé Fidèle HEUKOUA FONDJA </h5>
+                            <p class="card-text">SANTCHOU</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                  <!-- Card 2 -->
+                <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="antoni.jpg" class="img-fluid" alt="Pastor" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Anthony WAMO</h5>
+                            <p class="card-text">Fraoutown Nkongsamba</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                  <!-- Card 2 -->
+                <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="Goerge.jpg" class="img-fluid" alt="pretre" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé George EKANGO</h5>
+                            <p class="card-text">Loum</p> 
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="fok.jpg" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Bertrand NGALEU</h5>
+                            <p class="card-text">BOMONO-BABENGE</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="Tchiaga.jpg" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Thomas THIAGA</h5>
+                            <p class="card-text">BOMONO-BABENGE</p>
+                        </div>
+                    </div>
+                </div>
+              
+                <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="marc desire.jpg" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Mark Désiré MOUAHA</h5>
+                            <p class="card-text">SOUZA</p>
+                        </div>
+                    </div>
+                </div>
+                 
+                <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="nez.jpg" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé </h5>
+                            <p class="card-text">08036899594</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="Eric.jpg" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Eric Emmanuel TCHOUANI</h5>
+                            <p class="card-text">KOMPINA</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="ignace.jpg" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Ignace</h5>
+                            <p class="card-text">LOUM</p>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="tewa.jpg" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé André Nicaire TEHOUA TEHOUA</h5>
+                            <p class="card-text">BARRE</p>
+                        </div>
+                    </div>
+                </div>
+              
+                <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="bona.jpg" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé</h5>
+                            <p class="card-text">Bonangho</p>
+                        </div>
+                    </div>
+                </div>
+             
+                <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="Donasien.jpg" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Donasien</h5>
+                            <p class="card-text">Loum-Ville</p>
+                        </div>
+                    </div>
+                </div>
+                 
+                <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="pepe.jpg" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Paul Gaël ESSAME NYAME </h5>
+                            <p class="card-text">SANTCHOU</p>
+                        </div>
+                    </div>
+                </div>
+                  
+                <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Joseph PEPKA</h5>
+                            <p class="card-text">St. Jude NKONGSAMBA</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Simon MAMBOU, </h5>
+                            <p class="card-text">NKONGSAMBA</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Eugène M. NGUIDJO</h5>
+                            <p class="card-text">NKONGSAMBA</p>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé François MOUGOM</h5>
+                            <p class="card-text">NKONGSAMBA</p>
+                        </div>
+                    </div>
+                </div>
+              
+                <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Florent KANA MOLI</h5>
+                            <p class="card-text">NKONGSAMBA</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Michel KOUAM</h5>
+                            <p class="card-text">YAOUNDE</p>
+                        </div>
+                    </div>
+                </div>
+                 
+                <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Laurent NGALLA</h5>
+                            <p class="card-text">NKONGSAMBA</p>
+                        </div>
+                    </div>
+                </div>
+                 
+                <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Pascal DJEUGA</h5>
+                            <p class="card-text">NKONGSAMBA</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Sylvère HATMAN ENYAWE</h5>
+                            <p class="card-text">NKONGSAMBA</p>
+                        </div>
+                    </div>
+                </div>
+                  
+                <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé BODO Luc</h5>
+                            <p class="card-text">NKONGSAMBA</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Faustin DJIOKOU THEYO</h5>
+                            <p class="card-text">NKONGSAMBA</p>
+                        </div>
+                    </div>
+                </div>
+                 
+                <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé François Ledoux SIEKAPE </h5>
+                            <p class="card-text">NKONGSAMBA</p>
+                        </div>
+                    </div>
+                </div>
+                 
+                <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Brice ETOUNGOU</h5>
+                            <p class="card-text">NKONGSAMBA</p>
+                        </div>
+                    </div>
+                </div>
+              
+                <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Blaise Kévin DJOUMESSIE</h5>
+                            <p class="card-text">MELONG</p>
+                        </div>
+                    </div>
+                </div>
+                 
+                <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">AbBé Sam-Yannick KEMEGNI TIODI</h5>
+                            <p class="card-text">MELONG</p>
+                        </div>
+                    </div>
+                </div>
+           
+                <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Arnaud Landry SILATCHA MBA </h5>
+                            <p class="card-text">MELONG</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="Law.jpg" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé NWAJAIKU Lawrence</h5>
+                            <p class="card-text">MELONG</p>
+                        </div>
+                    </div>
+                </div>
+                 
+                <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="tewa.jpg" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé André Nicaire TEHOUA TEHOUA</h5>
+                            <p class="card-text">BARRE</p>
+                        </div>
+                    </div>
+                </div>
+                 
+                <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé TCHOFFO ANGE Lehman</h5>
+                            <p class="card-text">BARRE</p>
+                        </div>
+                    </div>
+                </div>
+                 
+                <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Longin ENGOLO</h5>
+                            <p class="card-text">MELONG</p>
+                        </div>
+                    </div>
+                </div>
+                 
+                <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Richard ETAPE</h5>
+                            <p class="card-text">MELONG</p>
+                        </div>
+                    </div>
+                </div>
+              
+                <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Janvier TCHEUMALEU</h5>
+                            <p class="card-text">MELONG</p>
+                        </div>
+                    </div>
+                </div>
+                  
+                <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Benoit EWANE</h5>
+                            <p class="card-text">MELONG</p>
+                        </div>
+                    </div>
+                </div>
+                  
+                <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Maxime NGANA </h5>
+                            <p class="card-text">MELONG</p>
+                        </div>
+                    </div>
+                </div>
+                 
+                <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Cosmas ANAZODO </h5>
+                            <p class="card-text">MELONG</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Armel NGUEMENIN FODOUOP </h5>
+                            <p class="card-text">MELONG</p>
+                        </div>
+                    </div>
+                </div>
+                 
+                <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Guy Gaspard TIKI </h5>
+                            <p class="card-text">SANTCHOU</p>
+                        </div>
+                    </div>
+                </div>
+                 
+                <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé KOMBOU TCHOKONTE Gauthier </h5>
+                            <p class="card-text">SANTCHOU</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Merlin Laurier KONGUEH ESSEMBION </h5>
+                            <p class="card-text">SANTCHOU</p>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Eric Aaron DJEUKENG </h5>
+                            <p class="card-text">MELONG</p>
+                        </div>
+                    </div>
+                </div>
+                 
+                <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Jean Paul ELONG MBELLA </h5>
+                            <p class="card-text">SANTCHOU</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Joël KOUAM POUAKAM </h5>
+                            <p class="card-text">SANTCHOU</p>
+                        </div>
+                    </div>
+                </div>
+                  
+                <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé TOUBIWO MENTCHIEYE Thierry </h5>
+                            <p class="card-text">SANTCHOU</p>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Thomas ELAT </h5>
+                            <p class="card-text">SANTCHOU</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Vincent de Paul TEUMA </h5>
+                            <p class="card-text">SANTCHOU</p>
+                        </div>
+                    </div>
+                </div>
+                 
+                <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Hubert  Leopolt EKADJOUE</h5>
+                            <p class="card-text">Manjo-NDIANG</p>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Abdon B. TAKOUGANG</h5>
+                            <p class="card-text">Manjo-NDIANG</p>
+                        </div>
+                    </div>
+                </div>
+                
+                 <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Alexandre NKOUME</h5>
+                            <p class="card-text">Manjo-EMENG</p>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Dimitri POUADEU</h5>
+                            <p class="card-text">MOUAMENAM</p>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé  Augustin E. HITIKETIK</h5>
+                            <p class="card-text">KOLA</p>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé SAMA EHAWE Cornelius Éric</h5>
+                            <p class="card-text">MOUAMENAM</p>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Antoine-Marie NSOUMPE</h5>
+                            <p class="card-text">MBANGA-MOULONG</p>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé André KAMENI</h5>
+                            <p class="card-text">LALA</p>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Tite NGOULE ASSU</h5>
+                            <p class="card-text">Loum Loum-Ville</p>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Augustine  IHEME CHINEDU</h5>
+                            <p class="card-text">Loum-Ville</p>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Serges Guy NYONGOH MBESSA</h5>
+                            <p class="card-text">Penja</p>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Joël Lazare ATANGANA ETEME</h5>
+                            <p class="card-text">Penja</p>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Gabriel NOUBISSIE</h5>
+                            <p class="card-text">BOUBA</p>
+                        </div>
+                    </div>
+                </div>
+ <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Sylvar Galvani FEUDJEU TAKOUNDE</h5>
+                            <p class="card-text">N'LOHÉ</p>
+                        </div>
+                    </div>
+                </div>
+ <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Gustave Herbert TOKO NANA</h5>
+                            <p class="card-text">Loum 99</p>
+                        </div>
+                    </div>
+                </div>
+ <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Robert Dieunedort MBITCHOU</h5>
+                            <p class="card-text">MBANGA-MOULONG</p>
+                        </div>
+                    </div>
+                </div>
+ <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Alexis TCHOUALA FOFFE</h5>
+                            <p class="card-text">MBANGA YOKÉ</p>
+                        </div>
+                    </div>
+                </div>
+ <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Patience TEFONG</h5>
+                            <p class="card-text">MBANGA YOKÉ</p>
+                        </div>
+                    </div>
+                </div>
+ <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Michel NDJEUTA</h5>
+                            <p class="card-text">NJOMBÉ</p>
+                        </div>
+                    </div>
+                </div>
+ <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Maurice MONGOUANA</h5>
+                            <p class="card-text">NJOMBÉ</p>
+                        </div>
+                    </div>
+                </div>
+ <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Thierry-Brice NZOGOUA</h5>
+                            <p class="card-text">DJOUNGO-ROUTE</p>
+                        </div>
+                    </div>
+                </div>
+ <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Martin FONGANG</h5>
+                            <p class="card-text">MBOUALE</p>
+                        </div>
+                    </div>
+                </div>
+ <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Nestor MBEBI MBESSA</h5>
+                            <p class="card-text">MBANGA-BALONG</p>
+                        </div>
+                    </div>
+                </div>
+ <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Marc MOUKAM</h5>
+                            <p class="card-text">MOMBO</p>
+                        </div>
+                    </div>
+                </div>
+ <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Albert NGONO ATANGANA</h5>
+                            <p class="card-text">MUYUKA</p>
+                        </div>
+                    </div>
+                </div>
+ <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Paul FOKAM</h5>
+                            <p class="card-text">DIBOMBARI</p>
+                        </div>
+                    </div>
+                </div>
+ <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Hugues POUGOUE</h5>
+                            <p class="card-text">PENDA-BOKO</p>
+                        </div>
+                    </div>
+                </div>
+ <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Pascal PELAPOUET</h5>
+                            <p class="card-text">PENDA-BOKO</p>
+                        </div>
+                    </div>
+                </div>
+ <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Guy Omer DEUFFA</h5>
+                            <p class="card-text">KOTTO</p>
+                        </div>
+                    </div>
+                </div>
+ <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Séraphin NGASSA</h5>
+                            <p class="card-text">BOMONO BA MBENGUE</p>
+                        </div>
+                    </div>
+                </div>
+ <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Stève NYAMCHI</h5>
+                            <p class="card-text">KOMPINA</p>
+                        </div>
+                        </div>
+                    </div>
+                     <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Jean FOTSING</h5>
+                            <p class="card-text">NKAPPA</p>
+                        </div>
+                        </div>
+                    </div>
+                     <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Christian YOUMBI</h5>
+                            <p class="card-text">MUNDANI</p>
+                        </div>
+                        </div>
+                    </div>
+                     <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Serges Rodrigue EBOUELLE</h5>
+                            <p class="card-text">MALEKE</p>
+                        </div>
+                        </div>
+                    </div>
+                     <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Armel NOUSSIHOU</h5>
+                            <p class="card-text">TILO</p>
+                        </div>
+                        </div>
+                    </div>
+                     <div class="col-6 col-md-3 col-sm-4 mb-4">
+                    <div class="card h-100">
+                        <div class="text-center pt-3">
+                            <img src="clergy.png" class="img-fluid" alt="pretres" style="max-height: 150px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Abbé Paul FOKAM</h5>
+                            <p class="card-text">BOMONO BA JEDU</p>
+                        </div>
+                        </div>
+                    </div>
+                    
+
+            </div>
+        </div>
+                  
+
+  <section class="text-containers">
+    <div class="div1">
+      <h3>Notre Mission</h3>
+      <p>
+        Évangéliser le peuple de Dieu par l’offrande de pouvoirs spirituels et matériels
+        pour la gloire de Dieu et le salut des âmes.
+      </p>
+    </div>
+  
+    <div class="div2">
+      <h3>Notre Vision</h3>
+      <p>
+        Un diocèse où le peuple de Dieu vit pleinement la vie offerte par Jésus-Christ 
+        grâce au développement humain intégral et à l’épanouissement spirituel.
+      </p>
+    </div>
+  
+    <div class="div3">
+      <h3>Notre Devise</h3>
+      <p>
+        <em>Quod Manus Nostrae Contrectaverunt</em><br />
+        <span>Ce que nos mains ont touché.</span>
+      </p>
+    </div>
+  </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="New logo.jpeg" alt="Diocese de Nkongsamba logo">
+                <h2>Diocèse de Nkongsamba</h2>
+                <p>Ce que nos mains ont touché.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Liens Rapides</h3>
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Événements</a></li>
+                    <li><a href="#">À propos</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Universal</h3>
+                <ul>
+                    <li><a href="#">Pape François</a></li>
+                    <li><a href="#">Vatican News</a></li>
+                    <li><a href="#">Mission</a></li>
+                    <li><a href="#">Doctrine</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p><i class="fas fa-map-marker-alt"></i> B.P. 123 Nkongsamba, Cameroun</p>
+                <p><i class="fas fa-envelope"></i> Email: contact@nkongsamba.org</p>
+                <p><i class="fas fa-phone"></i> Tél: +237 6 78 90 12 34</p>
+            </div>
+        </div>
+        
+        <div class="footer-partner-logos">
+            <a href="https://www.vaticannews.va/fr.html" target="_blank" rel="noopener">
+                <img src="vatican.png" alt="Vatican News">
+            </a>
+            <a href="https://cenc.cm/" target="_blank" rel="noopener">
+                <img src="cenc.jpeg" alt="CENC">
+            </a>
+            <a href="https://www.iubilaeum2025.va/fr.html" target="_blank" rel="noopener">
+                <img src="jubilee.png" alt="Jubilee 2025">
+            </a>
+            <a href="https://www.ktotv.com/" target="_blank" rel="noopener">
+                <img src="kto.jpeg" alt="KTO TV">
+            </a>
+            <a href="https://secam.org/" target="_blank" rel="noopener">
+                <img src="logo-SECAM.png" alt="SECAM">
+            </a>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2023 Diocèse de Nkongsamba. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>
